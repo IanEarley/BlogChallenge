@@ -12,7 +12,7 @@ require 'faker'
   Blog.create!(
     title: "#{Faker::LordOfTheRings.character}",
     body: "#{Faker::StarWars.quote}",
-    main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/300x200"
+    main_image: 'http://via.placeholder.com/600x400',
+    thumb_image: 'http://via.placeholder.com/300x200'
     )
 end
