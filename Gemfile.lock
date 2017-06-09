@@ -52,12 +52,19 @@ GEM
     concurrent-ruby (1.0.5)
     erubis (2.7.0)
     execjs (2.7.0)
+    faker (1.7.3)
+      i18n (~> 0.5)
     ffi (1.9.18)
+
     friendly (0.5.1)
       activesupport
       json_pure
       sequel (>= 3.7.0)
       will_paginate
+
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
+
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.4)
@@ -164,7 +171,10 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
+
   friendly
+  faker
+  friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

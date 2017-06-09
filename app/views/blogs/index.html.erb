@@ -5,10 +5,10 @@
 <table>
   <thead>
     <tr>
+      <th>Thumb image</th>
       <th>Title</th>
       <th>Body</th>
-      <th>Main image</th>
-      <th>Thumb image</th>
+      <!-- <th>Main image</th> -->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +16,10 @@
   <tbody>
     <% @blogs.each do |blog| %>
       <tr>
+        <td><%= image_tag blog.thumb_image unless blog.thumb_image.nil? %></td>
+        <!-- <td><%= blog.main_image %></td> -->
         <td><%= blog.title %></td>
         <td><%= blog.body %></td>
-        <td><%= blog.main_image %></td>
-        <td><%= blog.thumb_image %></td>
         <td><%= link_to 'Show', blog %></td>
         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
         <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
